@@ -119,6 +119,19 @@ img {
   height: 214px;
   background-image: url("./images/plom.png");
   content: "";
+  animation-name: plom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+@keyframes plom {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg)
+  }
 }
 .hero__title {
   margin-top: 0;
@@ -497,8 +510,6 @@ img {
 .footer-link {
   text-decoration: none;
 }
-.footer-logo {
-}
 .footer-list {
   display: flex;
   margin-top: 0;
@@ -528,6 +539,29 @@ img {
 .footer-endlist__item:not(:last-child) {
   margin-right: 30px;
 }
-.footer-link__image {
-}
 /* Footer section finished */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .site{
+    background-image: url("./images/headerbg@2x.png");
+  }
+  .collection {
+    background-image: url("./images/Groupcollection@2x.png");
+
+  }
+  .chouse{
+    background-image: url("./images/chousebg@2x.png");
+  }
+  .works {
+    background-image: url("./images/worksbg@2x.png");
+  }
+  .footer {
+    background-image: url("./images/footerbg@2x.png");
+  }
+  .commitment__bg {
+    background-image: url("./images/commitmentbg@2x.png");
+  }
+}
